@@ -1,4 +1,4 @@
-#List iste : https://clipboardlandingpage.now.sh
+#Live site : https://clipboardlandingpage.now.sh
 
 # Frontend Mentor - Clipboard landing page
 
