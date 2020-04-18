@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 
+
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    background-color: aqua;
+    background-color: hsl(217, 28%, 15%);
     font-family: 'Open Sans',sans-serif;
+    color: white;
 }
 
 h1,
@@ -18,7 +22,6 @@ nav{
 .flex{
     max-width: 100%;
     width: 1200px;
-    background-color: blanchedalmond;
     margin: 20px auto;
     display: flex;
     justify-content: space-evenly;
@@ -31,7 +34,6 @@ nav.flex{
 }
 
 nav ul{
-    background-color: blue;
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -43,24 +45,64 @@ nav ul li{
 }
 
 .container{
-    background-color: blue;
     max-width: 100%;
     width: 1200px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+header{
+    z-index: 99;
+    position: relative;
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
     margin: 0 auto;
     text-align: center;
 }
 
+header div p{
+    width: 80%;
+}
+
+.margin{
+    margin-bottom: 100px;
+}
+
+.curveimg{
+    max-width: 100%;
+    margin-top: -470px;
+    padding: 0;
+    background-color: hsl(218, 28%, 13%);
+    background-image: url(./images/bg-curvy-desktop.svg);
+}
+
+main,
+section{
+    background-color: hsl(218, 28%, 13%);
+    margin: 0;
+}
+
 .grid{
-    background-color: brown;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    margin-bottom: 100px;
+}
+
+.grid img{
+    height: 55px;
+    width: auto;
 }
 
 .grid div{
-    background-color: cadetblue;
     width: 60%;
 }
 
@@ -73,7 +115,7 @@ nav ul li{
 }
 
 .section-1 h3{
-    font-size: 4em;
+    font-size: 3em;
     margin-bottom: 0px;
 }
 
