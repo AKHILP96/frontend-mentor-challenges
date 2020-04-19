@@ -116,6 +116,9 @@ section p{
 
 footer{
     background-color: brown;
+    margin: 50px 0px;
+    font-size: 0.8em;
+    font-weight: 600;
 }
 
 footer img{
@@ -130,4 +133,104 @@ footer img{
 .social li{
     list-style: none;
     margin: 10px 0px 10px 30px;
+}
+
+.footer-small{
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 50%;
+    color: white;
+    background-color: cadetblue;
+}
+
+footer div{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    margin: 0 auto;
+}
+
+.left{
+    display: flex;
+    background-color: mediumblue;
+    flex-direction: column;
+}
+
+.left .head img{
+    width: 50%;
+    height: 30%;
+    background-color: mediumslateblue;
+    margin-bottom:30px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    background-color: mediumorchid;
+    padding-left: 40px;
+}
+
+.head{
+    background-color: mediumseagreen;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.email-head{
+    background-color: mediumvioletred;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.email-head h3{
+    margin-bottom: 30px;
+}
+
+.contact img{
+    margin: 0;
+    margin-right: 20px;
+    height: 15px;
+    width: 15px;
+}
+
+.contact span{
+    margin-bottom: 10px;
+}
+
+.contact{
+    background-color: olive;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+ul{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.social{
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+}
+
+.social li{
+    width: 150px;
+    font-size: 3em;
+}
+
+.input{
+    background-color: orchid;
+    max-width: 100%;
+}
+
+.input input{
+    height: 40px;
 }
