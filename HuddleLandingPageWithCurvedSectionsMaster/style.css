@@ -18,7 +18,7 @@ body{
 }
 
 nav button{
-    padding: 10px 20px;
+    width: 300px;
     color: var(--Pink);
     background-color: white;
     border: 1px solid var(--Pink);
@@ -94,7 +94,7 @@ section{
 }
 
 .section-1 img{
-    height: 80vh;
+    max-width: 100%;
 }
 
 .section-2 h2{
@@ -281,6 +281,8 @@ ul{
     margin: 0;
     padding: 0;
     transform: scaleY(-1) scaleX(-1);
+    left: 0;
+
 }
 
 
@@ -302,6 +304,7 @@ ul{
 #bottomimg{
     position: absolute;
     transform: scaleX(1);
+    left: 0;
 }
 
 footer div img{
@@ -310,4 +313,28 @@ footer div img{
 
 button:hover{
     cursor: pointer;
+}
+
+
+@media screen and (max-width:768px){
+    body{
+        text-align: center;
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    section div {
+        margin: 50px 0px;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer>div{
+        display: flex;
+        flex-direction: column;
+    }
 }
