@@ -19,7 +19,6 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: chartreuse;
     font-family: 'Public Sans',sans-serif;
     font-size: 16px;
     z-index: 100;
@@ -287,4 +286,77 @@ footer .last{
 
 footer .last p{
     color: white;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 920px) { 
+    body{
+        background-color: skyblue;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col{
+        align-items: center;
+    }
+
+    main img{
+        max-width: 0;
+        max-height: 0;
+        margin-top: 0;
+        display: block;
+    }
+
+    main>div>div{
+        display: block;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sec-2 .cards>div{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .sec-2 .cards img{
+        height: auto;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    #main-content{
+        align-items: center;
+    }
+
+    .show{
+        display: none;
+        flex-direction: row;
+    }
+
+    .show-button{
+        display: none;
+    }
+
+    .hamburger{
+        display: inline-block;
+    }
 }
