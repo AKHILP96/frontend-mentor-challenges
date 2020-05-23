@@ -1,0 +1,14 @@
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgb(223, 161, 173);
+}
+
+.icon-holder{
+    display: flex;
+    justify-content: space-between;
+    background-color: maroon;
+    width: 100%;
+    height: 20px;
+}

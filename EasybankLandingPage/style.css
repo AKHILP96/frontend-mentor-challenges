@@ -359,4 +359,15 @@ footer .last p{
     .hamburger{
         display: inline-block;
     }
+
+    .image-container{
+        background-color: orange;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .image-container img{
+        width: 1000px;
+        height: auto;
+    }
 }

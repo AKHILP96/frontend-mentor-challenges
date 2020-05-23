@@ -1,0 +1,12 @@
+.grid{
+    display: grid;
+    background-color: maroon;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    grid-gap: 10px;
+}
+
+.card-2{
+    background-color: orange;
+}
