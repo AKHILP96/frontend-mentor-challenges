@@ -74,7 +74,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <Header />
+        <Header/>
         <Overview data={this.state.overview} />
         <Today data={this.state.today} />
       </div>
