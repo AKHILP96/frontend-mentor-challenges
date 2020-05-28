@@ -1,5 +1,14 @@
 
 
 .card-2{
+    width: 100%;
     background-color: orange;
+    display: grid;
+    justify-self: start;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.right{
+    justify-self: end;
 }

@@ -11,12 +11,12 @@ const Overview = ({data}) => (
             <div className ='icon-holder'>{console.log(data[4])}
                 <img src={`${data[4] == "Facebook" ? Facebook : data[4] == "Twitter" ? Twitter :  data[4] == "Youtube" ? Youtube : Instagram }`}></img><span>{data[0]}</span>
             </div>
-            <div>
+            <div className="data-holder">
                 <h2>{data[1]}</h2>
-                <h5>{data[2]}</h5>
+                <p>{data[2].split("").map(data=><div>{data}</div>)}</p>
             </div>
             <div>
-                <h5>{data[3]}</h5>
+                <p>{data[3]}</p>
             </div>
         </div>))} 
     </div>
