@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: blue;
+    width: 60%;
+    margin: auto;
+}
+
+.card{
+    background-color: burlywood;
+    display: flex;
+
+}
+
+img{
+    width: 70%;
+    height: 70%;
+}

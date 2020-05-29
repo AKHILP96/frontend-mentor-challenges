@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+div{
+  border-radius: 5px;
+}
+
 .App{
   margin: 0 auto;
   width: 100vw;
