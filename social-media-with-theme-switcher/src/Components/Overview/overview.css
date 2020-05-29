@@ -1,9 +1,4 @@
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
-    width: 80vw;
-}
+
 
 .card{
     display: flex;
@@ -30,6 +25,7 @@
 }
 
 .data-holder p{
+    font-size: 2vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -10,9 +10,17 @@
   background-color: mediumaquamarine;
 }
 
+.container{
+  align-items: center;
+  margin: 20px auto;
+  background-color: midnightblue;
+  width: 80%;
+}
+
 .flex{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .grid{
@@ -20,7 +28,23 @@
     background-color: maroon;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* grid-template-rows: 1fr 1fr; */
-    width: 100%;
     grid-gap: 10px;
 }
 
+@media only screen and (max-width: 720px){
+  body{
+    background-color: salmon;
+  }
+
+  .flex{
+    background-color: sandybrown;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .grid{
+    background-color: black;
+    grid-template-columns: 1fr;
+  }
+}
