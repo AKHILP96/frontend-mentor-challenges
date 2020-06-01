@@ -1,17 +1,62 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+
+*, *:before, *:after{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body{
-    background-color: aqua;
+    font-family: 'Rubik',sans-serif;
+    font-size: 18px;
+}
+
+button{
+    box-sizing: inherit;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #cfcfcf;
+    transition: 0.2s ease-in;
+}
+
+button:hover{
+    box-sizing: inherit;
+    outline: 1px solid hsl(231, 69%, 60%);
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+}
+
+footer{
+    background-color: hsl(229, 31%, 21%);
+}
+
+h1,
+h2{
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    margin: 20px 0px;
+}
+
+p{
+    font-weight: 400;
+    color: hsl(229, 8%, 60%);
+    margin: 20px 0px;
+}
+
+.container{
+    width: 80%;
+    margin: 40px auto;
 }
 
 .flex{
     display: flex;
-    width: 80%;
-    margin: 0 auto;
 }
 
 .row{
@@ -23,8 +68,27 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 40%;
+    text-align: center;
+}
+
+header > img{
+    width: 55%;
+    margin-left: 10px;
 }
 
 ul{
     list-style: none;
+}
+
+li{
+    color: hsl(229, 31%, 21%);
+}
+
+ nav > ul{
+    width: 40%;;
+} 
+
+li > button{
+    background-color: hsl(0, 94%, 66%);
 }

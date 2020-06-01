@@ -6,18 +6,15 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Bookmark landing page</title>
+  <title>Bookmark landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="flex row">
-    <div>
+  <nav class="container flex row">
       <img src="./images/logo-bookmark.svg" alt="logo">
-    </div>
-    <div>
       <ul class="flex row">
         <li>
           Features
@@ -34,25 +31,23 @@
           </button>
         </li>
       </ul>  
-    </div>
   </nav>
   
-  <div class="flex row">
+  <header class="container flex row">
     <div>
       <h1>A Simple Bookmark Manager</h1>
     
       <p>A clean and simple interface to organize your favourite websites. Open a new 
       browser tab and see your sites load instantly. Try it for free.</p>
-    
-      <button>Get it on Chrome</button>
-      <button>Get it on Firefox</button>
+        <div class="flex row">
+          <button id="btn-2">Get it on Chrome</button>
+          <button id="btn-3">Get it on Firefox</button>
+        </div>
     </div>
-    <div>
       <img src="./images/illustration-hero.svg" alt="hero">
-    </div>
-  </div>
+  </header>
 
-  <div class="flex center">
+  <div class="container flex center">
     <h2>
       Features
     </h2>
@@ -68,7 +63,7 @@
     <p id="three">Easy Sharing</p>
   </div>
 
-  <div class="flex">
+  <div class="container flex">
     <div class="one">
       <div>
         <img src="./images/illustration-features-tab-1.svg" alt="tab1">
@@ -110,7 +105,7 @@
     </div>
   </div>
 
-  <div class="flex center">
+  <div class="container flex center">
     <h3>
       Download the extension
     </h3>
@@ -120,7 +115,7 @@
     </p>
   </div>
 
-  <div class="flex row">
+  <div class="container flex row">
     <div class="card">
       <div>
         <img src="./images/logo-chrome.svg" alt="chrome">
@@ -147,7 +142,7 @@
     </div>
   </div>
 
-  <div class="flex center">
+  <div class="container flex center">
     <h3>Frequently Asked Questions</h3>
     <p>
       Here are some of our FAQs. If you have any other questions you’d like 
@@ -191,7 +186,7 @@
     More Info
   </div>
 
-  <div class="flex center">
+  <div class="container flex center">
     <div>35,000+ already joined</div>
   
     <h4>Stay up-to-date with what we’re doing</h4>
@@ -202,10 +197,9 @@
     </div>
   </div>
 
-  <footer class="flex row">
+  <footer class="container flex row">
     <div>
       <img src="./images/logo-bookmark.svg" alt="logo">
-      <div>
         <ul>
           <li>
             Features
@@ -217,7 +211,6 @@
             Contact
           </li>
         </ul>  
-      </div>
     </div>
     <div>
       <img src="/images/icon-facebook.svg" alt="icon-facebook">
