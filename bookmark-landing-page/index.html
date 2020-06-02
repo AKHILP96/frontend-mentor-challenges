@@ -116,7 +116,7 @@
   </div>
 
   <div class="container flex row">
-    <div class="card">
+    <div class="card   flex center">
       <div>
         <img src="./images/logo-chrome.svg" alt="chrome">
         <h4>Add to Chrome</h4>
@@ -124,7 +124,7 @@
       </div>
       <button>Add & Install Extension</button>
     </div>
-    <div class="card">
+    <div class="card   flex center">
       <div>
         <img src="./images/logo-firefox.svg" alt="firefox">
         <h4>Add to Firefox</h4>
@@ -132,7 +132,7 @@
       </div>
       <button>Add & Install Extension</button>
     </div>
-    <div class="card">
+    <div class="card   flex center">
       <div>
         <img src="./images/logo-opera.svg" alt="opera">
         <h4>Add to Opera</h4>
@@ -197,24 +197,32 @@
     </div>
   </div>
 
-  <footer class="container flex row">
+  <footer class=" flex row">
     <div>
-      <img src="./images/logo-bookmark.svg" alt="logo">
-        <ul>
+      <div id="left" class="flex row">
+        <img src="./images/logo-bookmark.svg" alt="logo">
+          <ul id="list" class="flex row">
+            <li>
+              Features
+            </li>
+            <li>
+              Pricing
+            </li>
+            <li>
+              Contact
+            </li>
+          </ul>  
+      </div>
+      <div id="right">
+        <ul class="flex row">
           <li>
-            Features
+            <img src="/images/icon-facebook.svg" alt="icon-facebook">
           </li>
           <li>
-            Pricing
+            <img src="./images/icon-twitter.svg" alt="twitter">
           </li>
-          <li>
-            Contact
-          </li>
-        </ul>  
-    </div>
-    <div>
-      <img src="/images/icon-facebook.svg" alt="icon-facebook">
-      <img src="./images/icon-twitter.svg" alt="twitter">
+        </ul>
+      </div>
     </div>
   </footer>
 </body>

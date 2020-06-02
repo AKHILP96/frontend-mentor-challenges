@@ -36,7 +36,20 @@ button:hover{
 
 footer{
     background-color: hsl(229, 31%, 21%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
+footer > div{
+    background-color: lightcoral;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 h1,
 h2{
@@ -97,4 +110,24 @@ li > button{
 li > button:hover{
     color: hsl(0, 94%, 66%);
     outline: 1px solid hsl(0, 94%, 66%);
+}
+
+li:hover{
+    color: hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+
+#left{
+    width: 50%;
+}
+
+#right{;
+    width: 10%;
+}
+
+#list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
