@@ -117,11 +117,19 @@ li:hover{
     cursor: pointer;
 }
 
+.hidden{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
 #left{
     width: 50%;
 }
 
-#right{;
+#right{
     width: 10%;
 }
 
@@ -130,4 +138,51 @@ li:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.section-1::after{
+    content: '';
+    position: absolute;
+    width: 30em;
+    height: 20em;
+    background-color: hsl(231, 69%, 60%);
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: -1;
+}
+
+.section-8{
+    background-color: hsl(231, 69%, 60%);
+    width: 100%;
+    padding: 30px;
+    color: white;
+}
+
+.section-8 > * {
+    margin: 20px;
+    color: white;
+}
+
+.section-8  p{
+    letter-spacing: 0.2em;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.section-8 button{
+    background-color: hsl(0, 94%, 66%);
+}
+
+.section-8 button:hover{
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+    outline: 1px solid hsl(0, 94%, 66%);
+    box-shadow: none;
+}
+
+.section-8 input{
+    height: 50px;
+    font-size: 14px;
 }
