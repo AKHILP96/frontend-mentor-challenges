@@ -66,7 +66,7 @@ p{
 
 .container{
     width: 80%;
-    margin: 40px auto;
+    margin: 50px auto;
 }
 
 .flex{
@@ -76,6 +76,12 @@ p{
 .row{
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+}
+
+.column{
+    flex-direction: column;
+    justify-content: center;
 }
 
 .center{
@@ -185,4 +191,48 @@ li:hover{
 .section-8 input{
     height: 50px;
     font-size: 14px;
+}
+
+.selection{
+    justify-content: center;
+}
+
+.selection > div {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid hsl(0, 0%, 83%);
+    height: 100%;
+}
+
+.yol{
+    position: relative;
+    padding-bottom: 50px;
+    
+} 
+
+.section-3::after {
+    content: '';
+    position: absolute;
+    width: 30em;
+    height: 20em;
+    background-color: hsl(231, 69%, 60%);
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    z-index: -1;
+}
+
+.section-3 > div > div {
+    width: 40%;
+}
+
+#red-border{
+    border-bottom: 5px solid hsl(0, 94%, 66%);
+    margin-bottom: -4px;
+}
+
+.faq{
+    width: 60%;
+    justify-content: ;
 }
