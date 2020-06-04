@@ -159,6 +159,20 @@ li:hover{
     z-index: -1;
 }
 
+.section-1 button{
+    margin-right: 3em;
+}
+
+.section-1 button:nth-child(2){
+    background-color: hsl(229, 8%, 60%);
+}
+
+.section-1 button:nth-child(2):hover{
+    color: hsl(229, 8%, 60%);
+    outline: 1px solid hsl(229, 8%, 60%);
+    background-color: white;
+}
+
 .section-8{
     background-color: hsl(231, 69%, 60%);
     width: 100%;
@@ -166,10 +180,10 @@ li:hover{
     color: white;
 }
 
-.section-8 > * {
+/* .section-8 > * {
     margin: 20px;
     color: white;
-}
+} */
 
 .section-8  p{
     letter-spacing: 0.2em;
@@ -179,6 +193,8 @@ li:hover{
 
 .section-8 button{
     background-color: hsl(0, 94%, 66%);
+    box-shadow: none;
+    outline: none;
 }
 
 .section-8 button:hover{
@@ -188,13 +204,14 @@ li:hover{
     box-shadow: none;
 }
 
-.section-8 input{
-    height: 50px;
-    font-size: 14px;
-}
 
 .selection{
     justify-content: center;
+}
+
+.selection > div > p:hover{
+    color: hsl(0, 94%, 66%);
+    cursor: pointer;
 }
 
 .selection > div {
@@ -266,4 +283,60 @@ li:hover{
     width: 30%;
     align-items: center;
     justify-content: center;
+}
+
+.card{
+    border: 1px solid #fff;
+    margin: 0px 20px;
+    width: 25%;
+    padding: 10px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px #888, 0px 15px 15px hsl(231, 40%, 68%) ;
+}
+
+.card br{
+    height:1px;
+    width: 100%;
+    content: '';
+    border-top: 5px dotted hsl(231, 69%, 60%) ;
+    border-top-width:5px;
+    border-right-width:0px;
+    border-bottom-width:0px;
+    border-left-width:0px;
+    margin-bottom: 20px;
+}
+
+.card > img{
+    width: 35%;
+    margin: 20px 0px;
+}
+
+.card h4 {
+    margin: 10px 0px;
+}
+
+.card p {
+    margin: 0px 0px;
+    margin-bottom: 40px;
+}
+
+.card button{
+    margin-bottom: 20px;
+}
+
+.input{
+    background-color: blueviolet;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input input{
+    width: 60%;
+}
+
+.input input:focus{
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
 }
