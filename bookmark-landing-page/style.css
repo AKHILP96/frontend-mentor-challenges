@@ -192,6 +192,7 @@ li:hover{
 }
 
 .section-8 button{
+    font-size: 0.3em;
     background-color: hsl(0, 94%, 66%);
     box-shadow: none;
     outline: none;
@@ -326,7 +327,7 @@ li:hover{
 
 .input{
     background-color: blueviolet;
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
 }
@@ -339,4 +340,23 @@ li:hover{
     outline: none;
     font-size: 20px;
     padding: 10px;
+}
+
+input[type='email']:invalid{
+    background-color: chartreuse;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #ff0000;
+}
+
+.input > div{
+    width: 100%;
+    position: relative;
+}
+
+.input > div > p{
+    position: absolute;
+    background-color: coral;
+    width: 60%;
+    margin-bottom: 0;
 }

@@ -49,7 +49,6 @@ window.onload = () => {
     
     for(let i=0;i<faqAnswer.length;i++){
         faqAnswer[i].style.display = 'none';
-        console.log(faqAnswer[i]);
     }
 }
 
@@ -63,10 +62,7 @@ console.log(faqQue);
 window.onclick = (e) => {
     if(e.path[2].className == 'faq'){
         e.stopPropagation();
-        console.log(e);
-        console.log(e.path[1].nextElementSibling);
         let ele = e.path[1].nextElementSibling;
-        console.log(ele.style.display == "none");
         if(ele.style.display == 'none'){
             console.log(e.path[1].children[1]);
             e.path[1].children[1].style = 'transform:rotate(180deg)';
@@ -77,3 +73,4 @@ window.onclick = (e) => {
         }
     }
 }
+
