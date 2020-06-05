@@ -65,7 +65,7 @@ h2{
 p{
     font-weight: 400;
     color: hsl(229, 8%, 60%);
-    margin: 20px 0px;
+    margin: 20px auto;
 }
 
 .container{
@@ -344,6 +344,8 @@ li:hover{
     width: 60%;
     font-size: 20px;
     padding: 10px;
+    border-radius: 5px;
+    border: none;
 }
 
 .input input:focus{
@@ -377,4 +379,223 @@ li:hover{
     position: absolute;
     right: 10px;
     top: 25%;
+}
+
+.dropdown-card{
+    display: none;
+}
+
+#darkblue{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(229, 31%, 21%);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hamburger{
+    display: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#darkblue{
+    position: fixed;
+    text-align: center;
+}
+
+#darkblue .flex{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+}
+
+#darkblue p{
+    margin: 0;
+}
+
+#darkblue img{
+    height: 50%;
+}
+
+#darkblue ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+#darkblue li{
+    width: 100%;
+    margin: 20px auto;
+    border-top: 2px solid hsl(229, 8%, 60%);
+    margin: 0;
+    padding: 2%;
+}
+
+#darkblue li:last-child{
+    border-bottom: 2px solid hsl(229, 8%, 60%);
+}
+
+#social{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    background-color: lawngreen;
+}
+
+
+@media screen and (max-width:792px){
+    body{
+        text-align: center;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .selection{
+        width: 80%;
+    }
+
+    .section-1{
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .section-1 img{
+        width: 80%;
+    }
+
+    .section-1::after{
+        content: '';
+        position: absolute;
+        width: 15em;
+        height: 10em;
+        background-color: hsl(231, 69%, 60%);
+        right: 0;
+        top: 15%;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        z-index: -1;
+    }
+
+    .section-3 > div > div {
+        width: 80%;
+    } 
+
+    .section-3 img{
+        max-width: 80%;
+    }
+
+    .section-3::after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 25%;
+        background-color: hsl(231, 69%, 60%);
+        left: 0;
+        top: 25%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        z-index: -1;
+    }
+
+    .section-3 > div > div  {
+        margin-top: 100px;
+    }
+
+    .input{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #email-button{
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    #btn-2,#btn-3{
+        margin: 10px auto;
+    }
+
+    .width{
+        width: 80%;
+    }
+
+    footer li{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer{
+        padding-top: 20px;
+    }
+
+    footer > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #right{
+        width: 30%;
+    }
+
+    #right > ul {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav.flex{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav > ul.flex{
+        display: none;
+        background-color: violet;
+    }
+
+    nav button:hover{
+        outline: none;
+    }
+
+    #hamburger{
+        display: block;
+    }
+
 }

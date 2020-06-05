@@ -7,6 +7,9 @@ let input = document.getElementById('email-input');
 let btn = document.getElementById('email-button');
 let img = document.getElementById('errorimg');
 let txt = document.getElementById('error');
+let dropdown = document.getElementById('darkblue');
+
+let ham = document.getElementById('hamburger');
 
 const faqAnswer = document.querySelectorAll('.faq-answer');
 
@@ -92,4 +95,8 @@ btn.onclick = (e) => {
         img.style.display = 'none';
         txt.style.display = 'none';
     }
+}
+
+ham.onclick = (e) => {
+    dropdown.style.display = 'block';
 }
