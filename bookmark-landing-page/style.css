@@ -42,12 +42,16 @@ footer{
 }
 
 footer > div{
-    background-color: lightcoral;
     margin: 0 auto;
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+footer li {
+    color: white;
+    font-size: 0.8em;
 }
 
 
@@ -189,10 +193,15 @@ li:hover{
     letter-spacing: 0.2em;
     font-size: 15px;
     text-transform: uppercase;
+    color: white;
+}
+
+.section-8 h2{
+    color: white;
 }
 
 .section-8 button{
-    font-size: 0.3em;
+    font-size: 0.9em;
     background-color: hsl(0, 94%, 66%);
     box-shadow: none;
     outline: none;
@@ -326,7 +335,6 @@ li:hover{
 }
 
 .input{
-    background-color: blueviolet;
     width: 40%;
     display: flex;
     justify-content: space-between;
@@ -334,29 +342,39 @@ li:hover{
 
 .input input{
     width: 60%;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .input input:focus{
     outline: none;
-    font-size: 20px;
-    padding: 10px;
+
 }
 
-input[type='email']:invalid{
-    background-color: chartreuse;
-    font-size: 20px;
-    padding: 10px;
-    border: 1px solid #ff0000;
-}
 
-.input > div{
-    width: 100%;
+.input-holder{
     position: relative;
+    width: 70%;
+    min-height: 100%;
+
 }
 
-.input > div > p{
+.input-holder input{
+    width: 100%;
+    height: 100%;
+}
+
+#error{
+    background-color: hsl(0, 94%, 66%);
+    color: white;
     position: absolute;
-    background-color: coral;
-    width: 60%;
-    margin-bottom: 0;
+    margin-top: 0px;
+    width: 100%;
+    
+}
+
+#errorimg{
+    position: absolute;
+    right: 10px;
+    top: 25%;
 }

@@ -3,6 +3,11 @@ const one = document.getElementById('one');
 const two = document.getElementById('two');
 const three = document.getElementById('three');
 
+let input = document.getElementById('email-input');
+let btn = document.getElementById('email-button');
+let img = document.getElementById('errorimg');
+let txt = document.getElementById('error');
+
 const faqAnswer = document.querySelectorAll('.faq-answer');
 
 
@@ -50,6 +55,8 @@ window.onload = () => {
     for(let i=0;i<faqAnswer.length;i++){
         faqAnswer[i].style.display = 'none';
     }
+    img.style.display = 'none';
+    txt.style.display = 'none';
 }
 
 
@@ -74,3 +81,15 @@ window.onclick = (e) => {
     }
 }
 
+btn.onclick = (e) => {
+    console.log("ererE");
+    console.log(input.value);
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (reg.test(input.value) == false) {
+        img.style.display = 'block';
+        txt.style.display = 'block';
+    }else{
+        img.style.display = 'none';
+        txt.style.display = 'none';
+    }
+}
