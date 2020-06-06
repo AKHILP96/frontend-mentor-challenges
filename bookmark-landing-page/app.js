@@ -8,7 +8,7 @@ let btn = document.getElementById('email-button');
 let img = document.getElementById('errorimg');
 let txt = document.getElementById('error');
 let dropdown = document.getElementById('darkblue');
-
+let close = document.getElementById('cross');
 let ham = document.getElementById('hamburger');
 
 const faqAnswer = document.querySelectorAll('.faq-answer');
@@ -98,5 +98,9 @@ btn.onclick = (e) => {
 }
 
 ham.onclick = (e) => {
-    dropdown.style.display = 'block';
+    dropdown.style.display = 'flex';
+}
+
+close.onclick = (e) => {
+    dropdown.style.display = 'none';
 }

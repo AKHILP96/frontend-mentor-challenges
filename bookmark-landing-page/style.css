@@ -392,7 +392,7 @@ li:hover{
     position: absolute;
     z-index: 100;
     top: 0;
-    display: flex;
+    display: hidden;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -411,6 +411,11 @@ li:hover{
     text-align: center;
 }
 
+#darkblue #cross{
+    font-size: 50px;
+    cursor: pointer;
+}
+
 #darkblue .flex{
     display: flex;
     flex-direction: row;
@@ -418,14 +423,19 @@ li:hover{
     justify-content: space-between;
     align-items: center;
     margin: 10px auto;
+    height: 20%;
+}
+
+#darkblue button{
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+    border: 2px solid #fff;
+    width: 20%;
 }
 
 #darkblue p{
     margin: 0;
-}
-
-#darkblue img{
-    height: 50%;
 }
 
 #darkblue ul{
@@ -450,9 +460,11 @@ li:hover{
 
 #social{
     width: 30%;
+    height: 10%;
     display: flex;
     align-items: center;
-    background-color: lawngreen;
+    justify-content: space-between;
+    margin-bottom: 3%;
 }
 
 
