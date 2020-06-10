@@ -1,0 +1,33 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(253, 253, 253);
+    font-size: 16px;
+}
+
+.container{
+    width: 80%;
+    margin: 3em auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.column{
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+}
+

@@ -1,0 +1,56 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    background-color: aquamarine;
+    width: 50%;
+    margin:  auto;
+}
+
+.container > div{
+    margin: 0px 20px;
+    background-color: chartreuse;
+}
+
+.container::after{
+    background-image: url('./images/bg-desktop.svg');
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+    border-top-left-radius: 15%;
+}
+
+.flex{
+    display: flex;
+    margin: 0px 20px;
+    background-color: brown;
+}
+
+.row{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
