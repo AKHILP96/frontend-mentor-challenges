@@ -113,6 +113,12 @@ h1{
     display: grid;
     grid-template-columns: 1fr 80%;
     align-items: stretch;
+    margin-bottom: 2em;
+}
+
+.about-product li h4{
+    font-size: 1.25em;
+    margin-bottom: 1em;
 }
 
 .about-product li p{
@@ -126,4 +132,13 @@ h1{
     grid-template-columns: 1fr;
     grid-gap: 10px;
     width: 100%;
+}
+
+.box{
+    padding: 10px 30px;
+    background-color: var(--Red);
+    color: white;
+    border-radius: 25px;
+    justify-self: flex-start;
+    align-self: baseline;
 }
