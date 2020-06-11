@@ -227,7 +227,6 @@ input[type='email']{
 
 .testimonial{
     overflow: hidden;
-    background-color: turquoise;
 }
 
 .testimonial > *{
