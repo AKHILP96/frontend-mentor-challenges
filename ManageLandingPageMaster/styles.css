@@ -224,3 +224,32 @@ input[type='email']{
 
     justify-content: space-between;
 }
+
+.testimonial{
+    overflow: hidden;
+    background-color: turquoise;
+}
+
+.testimonial > *{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.testimonial h3{
+    font-size: 2em;
+}
+
+.card{
+    margin-right: 20px;
+    margin-left: 20px;
+    max-width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card img{
+    z-index: 1000;
+}
