@@ -5,14 +5,13 @@
 }
 
 .price-card{
-    background-color: yellow;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    outline: 1px solid black;
     width: 100%;
     text-align: center;
     align-items: center;
+    outline: none;
 }
 
 .price-card ul{
@@ -31,6 +30,7 @@
 
 .price-card li{
     font-size: 0.9em;
+    margin: 0.5em auto;
 }
 
 .price-card img{
