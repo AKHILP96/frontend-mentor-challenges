@@ -19,6 +19,7 @@ a{
     text-decoration: none;
     transition: all 0.2s ease;
     min-height: 100%;
+    cursor: pointer;
 }
 
 a:hover{
