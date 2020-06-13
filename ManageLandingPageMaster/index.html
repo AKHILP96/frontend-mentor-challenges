@@ -10,31 +10,30 @@
   <title>Manage landing page</title>
 </head>
 <body>
-
   <nav class="container flex row">
-    <img src="./images/logo.svg" alt="logo">
+    <a ><img data-id="main" src="./images/logo.svg" alt="logo"></a>
     <ul class="flex row">
         <li>
-          <a href="pricing.html">Pricing</a> 
+          <a data-id="pricing">Pricing</a> 
         </li>
         <li>
-          <a herf="./product.html">Product</a>
+          <a data-id="product">Product</a>
         </li>
         <li>
-          <a href="./aboutUs.html">About Us</a>
+          <a data-id="aboutus">About Us</a>
         </li>
         <li>
-          <a href="./careers.html">Careers</a>
+          <a data-id="careers">Careers</a>
         </li>
         <li>
-          <a href="./community.html">Community</a>
+          <a data-id="community">Community</a>
         </li>
     </ul> 
     <button>
       Get Started
     </button>
   </nav>
-
+  <div id="main">
   <div class="section-1 container flex row">
     <div class="flex column">
         <h1>
@@ -148,6 +147,68 @@
       <button>Get Started</button>
     </div>
   </div>
+</div>
+
+<div id="pricing">
+  <div class="container pricing-component">
+    <div class="price-card">
+        <img src="./images/paper-plane.png" alt="paper-plane">
+        <h3>Free Trial</h3>
+        <ul>
+            <li>Try Manage for 30 Days</li>
+            <li>Cancel anytime</li>
+            <li>Upto 3 Free Projects</li>
+        </ul>
+        <button>Try for Free</button>
+    </div>
+    <div class="price-card">
+        <img src="./images/plane.png" alt="plane">
+        <h3>Small Team</h3>
+        <ul>
+            <li>Best suited for team of 100</li>
+            <li>Unlimited Projects</li>
+            <li>24 X 7 email support</li>
+        </ul>
+        <button><span>59$/Month</span></button>
+    </div>
+    <div class="price-card">
+        <img src="./images/spaceship.png" alt="spaceship">
+        <h3>Enterprise</h3>
+        <ul>
+            <li>Best suited for large teams</li>
+            <li>Weekly report generator</li>
+            <li>24 X 7 chat support</li>
+        </ul>
+        <button><span>109$/month</span></button>
+    </div>
+    <div class="price-card">
+        <img src="./images/fighter-jet.png" alt="jet">
+        <h3>Custom</h3>
+        <ul>
+            <li>Custom features</li>
+            <li>Custom billing</li>
+            <li>24 X 7 Support</li>
+        </ul>
+        <button><span>Contact Us</span></button>
+    </div>
+  </div>
+</div>
+
+<div id="product">
+  <h2>Product</h2>
+</div>
+
+<div id="aboutus">
+  <h2>about us</h2>
+</div>
+
+<div id="careers">
+  <h2>careers</h2>
+</div>
+
+<div id="community">
+  <h2>community</h2>
+</div>
 
   <footer>
     <div class="container">
@@ -199,5 +260,6 @@
   })
 })
   </script>
+  <script src="index.js"></script>
 </body>
 </html>

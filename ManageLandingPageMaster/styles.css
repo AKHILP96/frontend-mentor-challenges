@@ -18,6 +18,7 @@
 a{
     text-decoration: none;
     transition: all 0.2s ease;
+    min-height: 100%;
 }
 
 a:hover{
@@ -26,6 +27,10 @@ a:hover{
 
 a:visited{
     color: var(--DarkBlue);
+}
+
+a:active{
+    columns: var(--DarkBlue);
 }
 
 body{
@@ -264,4 +269,49 @@ input[type='email']{
 
 .card img{
     z-index: 1000;
+}
+
+.pricing-component{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+}
+
+.price-card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    outline: none;
+}
+
+.price-card ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.price-card > *{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.price-card li{
+    font-size: 0.9em;
+    margin: 0.5em auto;
+}
+
+.price-card img{
+    max-width: 100%;
+    position: relative;
+    z-index: 101;
+}
+
+.price-card button{
+    width: 60%;
 }
