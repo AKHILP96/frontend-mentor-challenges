@@ -408,6 +408,11 @@ table{
     width: 80%;
 }
 
+td{
+    text-align: center;
+    padding: 2em 0;
+}
+
 #careers > .flex > *{
     width: 40%;
 }
@@ -424,4 +429,23 @@ table{
     text-align: center;
     font-size: 2em;
     font-weight: 500;
+}
+
+#aboutus > *{
+
+}
+
+#aboutus .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: chartreuse;
+}
+
+#aboutus .card{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#aboutus .card img{
+    width: 100%;
 }
