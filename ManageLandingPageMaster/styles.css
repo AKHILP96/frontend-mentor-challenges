@@ -39,7 +39,9 @@ body{
     font-size: 16px;
     font-family: "Be Vietnam",sans-serif;
     color: var(--DarkBlue);
+    position: relative;
 }
+
 
 .container{
     width: 80%;
@@ -76,8 +78,16 @@ button{
     color: white;
     background-color: var(--Red);
     border: none;
+    border: 1px solid transparent;
     border-radius: 25px;
-    padding: 10px 30px;
+    padding: 12px 30px;
+    transition: all 0.2s ease;
+}
+
+button:hover{
+    background-color: white;
+    color: var(--Red);
+    border: 1px solid var(--Red);
 }
 
 h1{
@@ -107,9 +117,18 @@ h1{
     align-self: flex-start;
 }
 
+.section-1 img{
+    margin: 0;
+}
 .section-2{
     display: grid;
     grid-template-columns: 1fr 50%;
+    margin-top: 6em;
+}
+
+.section-2 img{
+    width: 80%;
+    margin-top: 4em;
 }
 
 .section-2 h2{
@@ -120,7 +139,6 @@ h1{
 
 .section-2:first-child{
     width: 20%;
-    background-color: crimson;
 }
 
 .section-2 p{
@@ -151,6 +169,10 @@ h1{
     grid-template-columns: 1fr;
     grid-gap: 10px;
     width: 100%;
+}
+
+.about-product .box{
+    padding: 5px 20px;
 }
 
 .box{
@@ -266,10 +288,16 @@ input[type='email']{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    background-color: var(--VeryLightGray);
+}
+
+.card > *{
+    margin:10px auto;
 }
 
 .card img{
     z-index: 1000;
+    width: 25%;
 }
 
 .pricing-component{
@@ -315,4 +343,85 @@ input[type='email']{
 
 .price-card button{
     width: 60%;
+}
+
+#product > *{
+    margin: 10em auto;
+}
+
+#product .flex{
+    display: flex;
+    justify-content: space-between;
+} 
+
+#product .flex > div{
+    max-width: 40%;
+}
+
+#product img{
+    width: 50%;
+}
+
+#product h2{
+    font-size: 5em;
+}
+
+#product p{
+    font-size: 2em;
+}
+
+#community h2{
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    margin: 0.5em auto;
+}
+
+#community > *{
+    margin: 6em auto;
+
+}
+
+#community > .flex > *{
+    width: 45%;
+}
+
+#community > .column{
+    text-align: center;
+}
+
+#community > .column > p{
+    width: 60%;
+    margin: 1.5em auto;
+}
+
+#discord{
+   cursor: pointer;
+}
+
+#community a{
+    font-size: 2em;
+    width: 60%;
+}
+
+table{
+    width: 80%;
+}
+
+#careers > .flex > *{
+    width: 40%;
+}
+
+#careers h2{
+    font-size: 4em;
+}
+
+#careers p{
+    font-size: 1em;
+}
+
+#careers > .contianer >p{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
 }

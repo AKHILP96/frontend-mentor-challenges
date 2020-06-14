@@ -50,14 +50,17 @@
 
   <div class="container section-2">
     <div>
-      <h2>
-        What’s different about Manage?
-      </h2>
-      <p>
-        Manage provides all the functionality your team needs, without 
-        the complexity. Our software is tailor-made for modern digital 
-        product teams. 
-      </p>
+      <div>
+        <h2>
+          What’s different about Manage?
+        </h2>
+        <p>
+          Manage provides all the functionality your team needs, without 
+          the complexity. Our software is tailor-made for modern digital 
+          product teams. 
+        </p>
+      </div>
+      <img src="./images/undraw_scrum_board_cesn 1.png" alt="analytics">
     </div>
     
     <ul class="about-product">
@@ -150,6 +153,9 @@
 </div>
 
 <div id="pricing">
+  <div class="container flex">
+    <input type="checbox">
+  </div>
   <div class="container pricing-component">
     <div class="price-card">
         <img src="./images/paper-plane.png" alt="paper-plane">
@@ -203,6 +209,8 @@
       </div>
       <img src="./images/undraw_dark_analytics_7axy 1.png" alt="analytics">
     </div>
+  </div>
+  <div class="container">
     <div class="flex">
       <img src="./images/undraw_charts_jj6t 1.png" alt="charts">
       <div>
@@ -210,6 +218,8 @@
         <p>Compare how different teams within the project are doing</p>
       </div>
     </div>
+  </div>
+  <div class="container">
     <div class="flex">
       <div>
         <h2>Productivity</h2>
@@ -218,6 +228,7 @@
       <img src="./images/undraw_developer_activity_bv83 1.png" alt="developer">
     </div>
   </div>
+  <a id="pricing" class="flex column"><button>Get pricing now !</button></a>
 </div>
 
 <div id="aboutus">
@@ -225,10 +236,17 @@
 </div>
 
 <div id="careers">
-  <div class="container">
-    <h2>Join our Team</h2>
-    <p>Interested in joining our all-remote team? manage is a very unique place to work, and we’re taking an equally unique approach to growing our team. Learn more about our talent acquisition model and what it’s like to work here on our Jobs FAQ page.</p>
-    <p>Here’s a list of the active roles we’re sourcing for now. To be considered for a career opportunity at manage, please join our Talent Community.</p>
+  <div class="container flex row">
+    <div>
+      <h2>Join our Team</h2>
+      <p>Interested in joining our all-remote team? manage is a very unique place to work, and we’re taking an equally unique approach to growing our team. Learn more about our talent acquisition model and what it’s like to work here on our Jobs FAQ page.</p>
+     </div>
+    <img src="./images/undraw_team_spirit_hrr4 1.png" alt="team">
+  </div>
+  <div class="contianer">
+    <p>Here’s a list of the active roles we’re sourcing for now.</p>
+  </div>
+  <div class="container flex column">
     <table>
       <thead><tr><th>Department</th><th>Position</th><th>Job Family</th></tr></thead>
       <tbody></tbody>
@@ -238,15 +256,15 @@
 </div>
 
 <div id="community">
-  <div class="container flex">
+  <div class="container flex row">
     <img src="./images/undraw_around_the_world_v9nu 1.png" alt="around the world">
     <div>
       <h2>Join our Global Community</h2>
       <p>Get feedback and quick help with your projects in our online communities, or attend a meetup to learn manage with fellow engineers in person.</p>
-      <h3><img src="./images/discord.png" alt="">Join our discord community</h3>
+      <h3 id="discord">Join our discord community</h3>
     </div>
   </div>
-  <div class="container column">
+  <div class="container flex column">
     <h2>Local Communities</h2>
     <p>Connect with community members near you by joining a local Manage group. It’s a great way to get quick feedback on your Manage projects, organize meetups, learn tips and tricks, and more.</p>
     <a>Start your own Group -></a>
@@ -267,17 +285,17 @@
       </div>
       <div>
         <ul class="flex column">
-          <li>Home</li>
-          <li>Pricing</li>
-          <li>Products</li>
-          <li>About Us</li>
+          <a data-id="main"><li>Home</li></a>
+          <a data-id="pricing"><li>Pricing</li></a>
+          <a data-id="products"><li>Products</li></a>
+          <a data-id="aboutus"><li>About Us</li></a>
         </ul>
       </div>
       <div>
         <ul class="flex column">
-          <li>Careers</li>
-          <li>Community</li>
-          <li>Privacy Policy</li>
+          <a data-id="careers"><li>Careers</li></a>
+          <a data-id="community"><li>Community</li></a>
+          <a><li>Privacy Policy</li></a>
         </ul>
       </div>
       <div class="input flex column">

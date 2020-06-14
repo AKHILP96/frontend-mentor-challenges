@@ -1,4 +1,4 @@
-let tags = document.querySelectorAll('nav  a');
+let tags = document.querySelectorAll('a');
 let divs = document.querySelectorAll('body>div');
 for(let t of tags){
     t.addEventListener('click',show);
