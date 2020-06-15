@@ -279,6 +279,43 @@ input[type='email']{
     font-size: 2em;
 }
 
+
+#pricing .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    border: 2px solid var(--Red);
+    border-radius: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#pricing .grid > *{
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#pricing button span{
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#pricing .grid span{
+    font-size: 0.5em;
+    color: var(--DarkBlue);
+    font-weight: 700;
+    margin-left: 0.5em;
+}
+
+#active{
+    background-color: var(--Red);
+}
+
+#active p{
+    color: white;
+}
+
 .card{
     margin-right: 20px;
     margin-left: 20px;
@@ -438,14 +475,15 @@ td{
 #aboutus .cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: chartreuse;
 }
 
 #aboutus .card{
     display: grid;
+    border: 2px solid var(--Red);
+    border-radius: 15px;
     grid-template-rows: 1fr 1fr;
 }
 
 #aboutus .card img{
-    width: 100%;
+    width: 50%;
 }
