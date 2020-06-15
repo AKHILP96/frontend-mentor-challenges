@@ -505,3 +505,12 @@ td{
 #careers .card p{
     font-size: 2em;
 }
+
+#aboutus {
+    text-align: center;
+}
+
+#aboutus h2{
+    font-size: 3em;
+    margin-top: 1em;
+}

@@ -1,6 +1,6 @@
 let tags = document.querySelectorAll('a');
 let divs = document.querySelectorAll('body>div');
-
+console.log(tags);
 let monthly = document.getElementsByClassName('monthly');
 let yearly = document.getElementsByClassName('yearly');
 
@@ -9,6 +9,7 @@ for(let t of tags){
 }
 
 function show(e){
+    console.log(e.target);
     for(let d of divs){
         d.style.display = "none";
     }
