@@ -32,6 +32,16 @@ window.onload = () =>{
     for(let m of monthly){
         m.style.display = 'none';
     }
+    
+    for(let input of inputs){
+        input.addEventListener('blur',check);
+        console.log(input);
+    }
+
+    for(let form of forms){
+        form.style.display="none";
+    }
+
 }
 
 
@@ -66,14 +76,12 @@ function compute(){
 }
 
 
-for(let input of inputs){
-    input.addEventListener('blur',check);
-    console.log(input);
-}
+
 
 function check(e){
     console.log(e.target.id);
     let ele = document.querySelector(`[data-form=${e.target.id}]`);
-    if(e.target.value.length<1) console.log("yooo");
+    if(e.target.value.length<1) ele.style.display = "block";
+    else ele.style.display = "none";
     console.log(e.target.value.length);
 }

@@ -552,3 +552,16 @@ td{
     margin-top: 0.5em;
     padding: 10px 15px;
 }
+
+#getstarted > div > div{
+    position: relative;
+}
+
+p[data-form]{
+    display: block;
+    color: var(--Red);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: -1.25em;
+}
