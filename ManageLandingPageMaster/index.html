@@ -351,13 +351,29 @@
 </div>
 
 <div id="getstarted">
-  <div class="container flex column">
+  <div class="container flex start">
     <h2>Enter your Email Id to get Started with our Free Plan</h2>
-    <input type="email" placeholder="enter your email"/>
-    <input type="text" placeholder="enter your name" />
-    <input type="password" placeholder="enter a password"/>
-    <input type="password" placeholder="enter password to verify" />
-    <button>Sing up !</button>
+    <div>
+      <label for="name">Name</label>
+      <input type="email" name="text" id="name" placeholder="enter your name" autocomplete="off" required/>
+      <p data-form="name">Name can't be empty</p>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="enter your email" autocomplete="off" required/>
+      <p data-form="email">Enter a valid password</p>
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="enter your password" autocomplete="off" required/>
+      <p data-form="password">Password must contain a number, a special character and atleast 8 characters</p>
+    </div>
+    <div>
+      <label for="confirm-password">Verify Password</label>
+      <input type="password" id="confirm-password" placeholder="re-enter password to verify" autocomplete="off" required/>
+      <p data-form="confirm-password">Password doesn't match</p>
+    </div>
+    <button onclick=>Sign up !</button>
   </div>
 </div>
 

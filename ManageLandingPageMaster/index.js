@@ -1,6 +1,10 @@
 let tags = document.querySelectorAll('[data-id]');
 let divs = document.querySelectorAll('body>div');
-console.log(tags);
+let forms = document.querySelectorAll('[data-form]');
+let inputs = document.querySelectorAll('#getstarted input');
+console.log(forms);
+console.log(inputs);
+
 let monthly = document.getElementsByClassName('monthly');
 let yearly = document.getElementsByClassName('yearly');
 
@@ -59,4 +63,17 @@ function compute(){
             y.style.display="inline-block";
         }        
     }
+}
+
+
+for(let input of inputs){
+    input.addEventListener('blur',check);
+    console.log(input);
+}
+
+function check(e){
+    console.log(e.target.id);
+    let ele = document.querySelector(`[data-form=${e.target.id}]`);
+    if(e.target.value.length<1) console.log("yooo");
+    console.log(e.target.value.length);
 }
