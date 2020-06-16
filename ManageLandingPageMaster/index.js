@@ -1,4 +1,4 @@
-let tags = document.querySelectorAll('a');
+let tags = document.querySelectorAll('[data-id]');
 let divs = document.querySelectorAll('body>div');
 console.log(tags);
 let monthly = document.getElementsByClassName('monthly');

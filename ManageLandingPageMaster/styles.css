@@ -20,17 +20,29 @@ a{
     transition: all 0.2s ease;
     min-height: 100%;
     cursor: pointer;
+    border: none;
 }
 
 a:hover{
     color: var(--Red);
+    border: none;
+    outline: none;
 }
 
 a:visited{
     color: var(--DarkBlue);
+    border: none;
+    outline: none;
 }
 
+a:focus{
+    border: none;
+}
+
+
 a:active{
+    border: none;
+    outline: none;
     columns: var(--DarkBlue);
 }
 
@@ -88,6 +100,14 @@ button:hover{
     background-color: white;
     color: var(--Red);
     border: 1px solid var(--Red);
+}
+
+button:active{
+    outline: none;
+}
+
+button:focus{
+    outline: none;
 }
 
 h1{
