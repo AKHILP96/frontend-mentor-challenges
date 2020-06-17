@@ -564,4 +564,13 @@ p[data-form]{
     width: 100%;
     bottom: 0;
     margin-bottom: -1.25em;
+    transition: all 1s ease;
+    display: none;
+    transform: translateY(-40%);
+}
+
+.dropdown{
+    display: flex;
+    transform: translateY(40%);
+    background-color: yellow;
 }

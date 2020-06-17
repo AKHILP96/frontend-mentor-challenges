@@ -81,7 +81,7 @@ function compute(){
 function check(e){
     console.log(e.target.id);
     let ele = document.querySelector(`[data-form=${e.target.id}]`);
-    if(e.target.value.length<1) ele.style.display = "block";
+    if(e.target.value.length<1){ ele.style.display = "block"; ele.classList.add('dropdown');}
     else ele.style.display = "none";
     console.log(e.target.value.length);
 }
