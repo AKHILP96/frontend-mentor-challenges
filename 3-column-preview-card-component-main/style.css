@@ -1,0 +1,140 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --darkcyan: hsl(179, 100%, 13%);
+  --white: hsla(0, 0%, 100%, 0.75);
+  --offwhite: hsl(0, 0%, 95%);
+  --bigShoulderDisplay: "Big Shoulders Display", cursive;
+  --lexend: "Lexend Deca", sans-serif;
+}
+
+body {
+  display: flex;
+  padding: 24px;
+  background-color: var(--offwhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 920px;
+  max-width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.col {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.col-1 {
+  background-color: var(--orange);
+}
+
+.col-2 {
+  background-color: var(--cyan);
+}
+
+.col-3 {
+  background-color: var(--darkcyan);
+}
+
+img {
+  margin-bottom: 36px;
+}
+
+h1 {
+  font-family: var(--bigShoulderDisplay);
+  font-size: 40px;
+  line-height: 47.88px;
+  margin-bottom: 32px;
+}
+
+p {
+  font-family: var(--lexend);
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  line-height: 25px;
+}
+
+.btn {
+  padding: 12px 32px;
+  width: auto;
+  font-family: var(--lexend);
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  line-height: 25px;
+  border: 1px solid var(--offwhite);
+  background-color: var(--offwhite);
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.col-1 .btn {
+  color: var(--orange);
+}
+
+.col-2 .btn {
+  color: var(--cyan);
+}
+.col-3 .btn {
+  color: var(--darkcyan);
+}
+
+.col-1,
+.btn:hover {
+  color: white;
+}
+
+.col-2,
+.btn:hover {
+  color: white;
+}
+
+.col-3,
+.btn:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 788px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .btn {
+    margin-top: 24px;
+  }
+}
